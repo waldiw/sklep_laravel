@@ -26,8 +26,8 @@
                                 <div class="content">
                                     <div class="upper">
                                         <div class="nazwaTowaru">{{ $article->name }}</div>
-                                        <div class="foto"><img src="{{ $article->photo }}" alt="Cukierki"
-                                                               class="responsive"></div>
+                                        <div class="foto"><img src="{{ $article->photo }}" alt="image"
+                                                               class="articleImage"></div>
                                     </div>
                                     <div class="bottom">
                                         <div class="cena">Cena: {{ numberFormat($article->price) }} zł</div>
@@ -71,8 +71,10 @@
                                 <div class="content">
                                     <div class="upper">
                                         <div class="nazwaTowaru">{{ $article->name }}</div>
-                                        <div class="foto"><img src="{{ $article->photo }}" alt="Cukierki"
-                                                               class="responsive"></div>
+                                        <div class="foto">
+                                            <img src="{{ $article->photo }}" alt="image" class="articleImage">
+
+                                        </div>
                                     </div>
                                     <div class="bottom">
                                         <div class="cena">Cena: {{ numberFormat($article->price) }} zł</div>
@@ -102,7 +104,7 @@
             <div class="modalHeader">
                 <div id="modalPhoto" class="modalPhoto"></div>
                 <div id="articleName"></div>
-                <span class="close">&times;</span>
+                <span class="close"><i class="fa-regular fa-circle-xmark"></i></span>
             </div>
             <div class="modalBody">
                 <input id="articleId" type="hidden" class="productId" value="5">
@@ -110,10 +112,17 @@
                 <div id="articlePrice" class="cena"></div>
             </div>
             <div class="modalFooter">
-                <button class="btnAddCart">Dodaj do koszyka <i class="fa-solid fa-cart-shopping"
-                                                               style="color: #ffffff;"></i></button>
+                <button class="btnAddCart">Dodaj do koszyka <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></button>
             </div>
         </div>
+    </div>
+
+{{--  modal big image  --}}
+    <div id="imageModal" class="modal">
+        <span class="close2"><i class="fa-regular fa-circle-xmark"></i></span>
+        <div id="modalFotoBig" class="modalContent2">
+        </div>
+
     </div>
 @endsection
 

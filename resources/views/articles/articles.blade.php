@@ -11,7 +11,7 @@
                     <div class="content">
                         <div class="upper">
                             <div class="nazwaTowaru">{{ $article->name }}</div>
-                            <div class="foto"><img src="{{ $article->photo }}" alt="Cukierki" class="responsive"></div>
+                            <div class="foto"><img src="{{ $article->photo }}" alt="Cukierki" class="articleImage"></div>
                         </div>
                         <div class="bottom">
                             <div class="cena">Cena: {{ number_format($article->price / 100, 2, ',', ' ') }} zł</div>
