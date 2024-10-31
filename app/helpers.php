@@ -7,6 +7,7 @@ use App\Models\Orders;
 use App\Models\Parameters;
 use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\Mail;
+use Webklex\IMAP\Facades\Client;
 
 /**
  * helpers from cart with OrderController.
@@ -174,15 +175,25 @@ function confirmMail($uuid): void
 
     $subject = 'Zamówienie w e-sklepie OSM Olecko';
     $view = 'emails.confirmEmail';
-    Mail::to($email)->send(new ConfirmMail($body, $subject, $view));
-
+    $mail = Mail::to($email)->send(new ConfirmMail($body, $subject, $view));
+    // save sent email to folder SENT in mailbox
+    $client = Client::account('default');
+    $client->connect();
+    $folder = $client->getFolderByName('SENT');
+    $result = $folder->appendMessage($mail->getSymfonySentMessage()->toString(), ['\Seen'], now()->format("d-M-Y h:i:s O"));
     // send email to admin
     $orderId = $order->id;
     $subject = 'Nowe zamówienie w e-sklepie';
     $bodyAdmin = '<p>Masz nowe zamówienie numer: <b>' . $orderId . '</b></p>';
     $email = email(); // funkcja zwraca emaila z parametrów
     $view = 'emails.confirmAdminEmail';
-    Mail::to($email)->send(new ConfirmMail($bodyAdmin, $subject, $view));
+    $mail = Mail::to($email)->send(new ConfirmMail($bodyAdmin, $subject, $view));
+// save sent email to folder SENT in mailbox
+    $client = Client::account('default');
+    $client->connect();
+    $folder = $client->getFolderByName('SENT');
+    $result = $folder->appendMessage($mail->getSymfonySentMessage()->toString(), ['\Seen'], now()->format("d-M-Y h:i:s O"));
+
 }
 
 function email()
