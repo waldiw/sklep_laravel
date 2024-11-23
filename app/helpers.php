@@ -183,8 +183,9 @@ function confirmMail($uuid): void
     $result = $folder->appendMessage($mail->getSymfonySentMessage()->toString(), ['\Seen'], now()->format("d-M-Y h:i:s O"));
     // send email to admin
     $orderId = $order->id;
+    $orderName = $order->name;
     $subject = 'Nowe zamówienie w e-sklepie';
-    $bodyAdmin = '<p>Masz nowe zamówienie numer: <b>' . $orderId . '</b></p>';
+    $bodyAdmin = '<p>Masz nowe zamówienie numer <b>' . $orderId . '</b> od ' . $orderName  . '</p>';
     $email = email(); // funkcja zwraca emaila z parametrów
     $view = 'emails.confirmAdminEmail';
     $mail = Mail::to($email)->send(new ConfirmMail($bodyAdmin, $subject, $view));
