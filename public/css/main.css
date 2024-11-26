@@ -457,7 +457,7 @@ div.sticky {
 .nav-shop > ul {
     list-style-type: none;
     height: 30px;
-    list-style-type: none;
+    /*list-style-type: none;*/
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -489,6 +489,7 @@ div.sticky {
 .koszyk {
     padding-right: 5%;
     width: 160px;
+    color: white;
 }
 
 .basketItemCount {
@@ -505,12 +506,74 @@ div.sticky {
     color: silver !important;
 }
 
+.checkbtn {
+    font-size: 22px;
+    color: white;
+    float: right;
+    line-height: 10px;
+    margin-right: 2%;
+    /*margin-top: -20px;*/
+    cursor: pointer;
+    display: none;
+}
+
+#checkM {
+    display: none;
+}
+
+.koszykM {
+    display: none;
+}
+
+/* Responsive media query code for small screen */
+@media (max-width: 890px) {
+    .checkbtn {
+        display: block;
+    }
+
+    .koszykM {
+        display: inline-block;
+    }
+
+    .nav-shop > ul {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background: #00376e;
+        top: 35px;
+        left: -120%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .nav-shop > ul > li {
+        float: unset;
+        display: block !important;
+        /* margin: 50px 0; */
+        line-height: 30px;
+    }
+
+    .nav-shop > ul > li:last-child {
+        display: none !important;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: #0082e6;
+    }
+
+    #checkM:checked~ul {
+        left: 0;
+    }
+}
+/* ----------- end nawigacja ------------------- */
 .opis {
     text-align: justify;
     padding: 20px 10% 10px 10%;
 }
 
-/* ----------- end nawigacja ------------------- */
+
 
 /*------------ regulamin ----------------------- */
 #showStatute {
@@ -767,6 +830,23 @@ input:focus, textarea:focus {
     border-spacing: 0;
     width: 500px;
     margin: auto;
+}
+
+/* Responsive media query code for small screen */
+@media (max-width: 890px) {
+    .containerOrder {
+        padding: 20px 2% 10px 2%;
+    }
+    .orderTable, .shippingPrice {
+        width: 100%;
+        margin: unset;
+    }
+    .orderForm {
+        display: block !important;
+    }
+    .adressForm, .vatForm {
+        width: 100% !important;
+    }
 }
 
 .offset {
