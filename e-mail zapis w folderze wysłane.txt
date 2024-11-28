@@ -1,0 +1,15 @@
+dodajemy do projektu biblioteke odpowiadającą za zapis e-maila w folderze
+composer require webklex/laravel-imap
+
+w .env dodajemy parametry konta e-mail
+IMAP_HOST=hosting2355171.online.pro
+IMAP_PORT=993
+IMAP_ENCRYPTION=ssl
+IMAP_VALIDATE_CERT=true
+IMAP_USERNAME=waldek@osmolecko.pl
+IMAP_PASSWORD=
+IMAP_DEFAULT_ACCOUNT=default
+IMAP_PROTOCOL=imap
+
+strona projektu
+https://www.larablocks.com/package/webklex/laravel-imap
