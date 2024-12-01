@@ -32,7 +32,7 @@
 
 <body>
     @include('Components.message')
-<div class="containerW shadow1">
+<div class="containerW shadow">
 
     <img src="img/baner1.jpg" alt="Nature" class="responsive">
 

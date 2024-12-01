@@ -341,39 +341,41 @@ input[type=file]:hover {
 }
 
 /*------------------------------------------*/
-
-
 .shadow {
-    position: relative;
-    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.shadow:before, .shadow:after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-    top: 10px;
-    bottom: 10px;
-    left: 0;
-    right: 0;
-    -moz-border-radius: 100px / 10px;
-    border-radius: 100px / 10px;
-}
+/*.shadow {*/
+/*    position: relative;*/
+/*    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);*/
+/*    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);*/
+/*    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);*/
+/*}*/
 
-.shadow:after {
-    right: 10px;
-    left: auto;
-    -webkit-transform: skew(8deg) rotate(3deg);
-    -moz-transform: skew(8deg) rotate(3deg);
-    -ms-transform: skew(8deg) rotate(3deg);
-    -o-transform: skew(8deg) rotate(3deg);
-    transform: skew(8deg) rotate(3deg);
-}
+/*.shadow:before, .shadow:after {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    z-index: -1;*/
+/*    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);*/
+/*    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);*/
+/*    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);*/
+/*    top: 10px;*/
+/*    bottom: 10px;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    -moz-border-radius: 100px / 10px;*/
+/*    border-radius: 100px / 10px;*/
+/*}*/
+
+/*.shadow:after {*/
+/*    right: 10px;*/
+/*    left: auto;*/
+/*    -webkit-transform: skew(8deg) rotate(3deg);*/
+/*    -moz-transform: skew(8deg) rotate(3deg);*/
+/*    -ms-transform: skew(8deg) rotate(3deg);*/
+/*    -o-transform: skew(8deg) rotate(3deg);*/
+/*    transform: skew(8deg) rotate(3deg);*/
+/*}*/
 
 /* --------------------- nawigacja ------------------------------- */
 
@@ -1102,15 +1104,23 @@ input[type=radio]:hover {
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
-    .container {
-        width: 90%;
+    .container, .containerW {
+        width: 95%;
     }
 
     footer {
         display: block;
     }
 
-    .modalContent {
+    .modalContent, .modalContent2 {
         width: 80%;
+    }
+
+    .containerWrap {
+        padding: 20px 1% 10px 1%;
+    }
+
+    .cartTable, .orderTable, .shippingPrice {
+        font-size: 0.8em;
     }
 }
