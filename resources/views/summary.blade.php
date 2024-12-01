@@ -5,7 +5,7 @@
 @section('content')
 
     <div class="containerOrder">
-        <h2>Dziekujemy za złorzenie zamówienia:</h2>
+        <h2>Dziękujemy za złożenie zamówienia:</h2>
         @if (Cookie::get('shopping_uuid'))
             {!! $summaryOrder !!}
             {!! $summary !!}
