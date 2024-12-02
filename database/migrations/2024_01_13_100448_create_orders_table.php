@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('street', 100)->nullable();
             $table->string('city', 40);
             $table->string('post', 40);
-            $table->string('email', 20);
+            $table->string('email', 100);
             $table->string('phone', 40);
             $table->text('comments')->nullable();
             $table->boolean('vat')->default(0);

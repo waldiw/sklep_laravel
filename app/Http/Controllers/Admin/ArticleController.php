@@ -112,8 +112,11 @@ class ArticleController extends Controller
 
         // jeżeli w przesyłanych danych do zmiany jest zdjecie, to kasujemy stare
         if(isset($data['image'])) {
-            Storage::delete($oldImage); // kasowawnie zdjęć ze storage
-            //unlink(public_path('uploads/' . $oldImage)); // kasowanie zdjęć z public
+            // sprawdzić, czy obrazek do usunięcia nie null
+            if($oldImage != null) {
+                Storage::delete($oldImage); // kasowawnie zdjęć ze storage
+                //unlink(public_path('uploads/' . $oldImage)); // kasowanie zdjęć z public
+            }
         }
         return back()->with('message', 'Artykuł został zmieniony!');
     }

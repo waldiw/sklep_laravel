@@ -126,8 +126,7 @@
     </div>
 @endsection
 
-<script src="{{ asset('js/cookies.js') }}"></script>
-
 @section('script')
+    <script src="{{ asset('js/cookies.js') }}"></script>
     @include('scripts.shop')
 @endsection
