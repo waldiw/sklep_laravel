@@ -36,12 +36,14 @@ footer {
     justify-content: end;
 }
 
-h1, h2, footer > div > a {
+h1,
+h2,
+footer>div>a {
     color: #00254d !important;
     text-decoration: none;
 }
 
-footer > div > a:hover {
+footer>div>a:hover {
     color: silver !important;
 }
 
@@ -77,7 +79,8 @@ footer > div > a:hover {
 }
 
 
-.btnAddCart, .btnContact {
+.btnAddCart,
+.btnContact {
     border: 1px;
     width: 100%;
     /* margin: auto; */
@@ -88,14 +91,17 @@ footer > div > a:hover {
     height: 30px;
 }
 
-.btnAddCart:hover, .btnContact:hover {
+.btnAddCart:hover,
+.btnContact:hover {
     /* color: silver; */
     background: #0056b3;
     cursor: pointer;
     /* height: 40px; */
 }
 
-.foto, .nazwaTowaru, .dodaj {
+.foto,
+.nazwaTowaru,
+.dodaj {
     text-align: center;
 }
 
@@ -108,7 +114,10 @@ footer > div > a:hover {
     text-align: justify;
 }
 
-.nazwaTowaru, .opisTowaru, .dodaj, .cena {
+.nazwaTowaru,
+.opisTowaru,
+.dodaj,
+.cena {
     padding: 5px 15px 5px 15px;
 }
 
@@ -123,14 +132,22 @@ footer > div > a:hover {
 }
 
 .dodaj {
-    background: #00458e; /* Old browsers */
-    background: -moz-linear-gradient(top, #00458e 0%, #0056b3 8%, #00254d 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #00458e), color-stop(8%, #0056b3), color-stop(100%, #00254d)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #00458e 0%, #0056b3 8%, #00254d 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #00458e 0%, #0056b3 8%, #00254d 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #00458e 0%, #0056b3 8%, #00254d 100%); /* IE10+ */
-    background: linear-gradient(to bottom, #00458e 0%, #0056b3 8%, #00254d 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7d7e7d', endColorstr='#0e0e0e', GradientType=0); /* IE6-9 */
+    background: #00458e;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #00458e 0%, #0056b3 8%, #00254d 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #00458e), color-stop(8%, #0056b3), color-stop(100%, #00254d));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #00458e 0%, #0056b3 8%, #00254d 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #00458e 0%, #0056b3 8%, #00254d 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #00458e 0%, #0056b3 8%, #00254d 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #00458e 0%, #0056b3 8%, #00254d 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7d7e7d', endColorstr='#0e0e0e', GradientType=0);
+    /* IE6-9 */
     /* border-radius: 4px; */
     border: 1px;
     /* width: 70%; */
@@ -163,7 +180,7 @@ footer > div > a:hover {
     justify-content: flex-end;
 }
 
-.addArticle > .dodaj {
+.addArticle>.dodaj {
     width: 130px;
 }
 
@@ -214,7 +231,8 @@ footer > div > a:hover {
     /* height: 40px; */
 }
 
-.btnDelete, .btnDeleteCart {
+.btnDelete,
+.btnDeleteCart {
     border: 1px;
     color: white;
     font-size: 0.8em;
@@ -222,7 +240,8 @@ footer > div > a:hover {
     height: 30px;
 }
 
-.btnDelete:hover, .btnDeleteCart:hover {
+.btnDelete:hover,
+.btnDeleteCart:hover {
     background: #fc0028;
     cursor: pointer;
 }
@@ -381,14 +400,22 @@ input[type=file]:hover {
 
 
 .navbarW {
-    background: #00458e; /* Old browsers */
-    background: -moz-linear-gradient(top, #00458e 0%, #0056b3 8%, #00254d 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #00458e), color-stop(8%, #0056b3), color-stop(100%, #00254d)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #00458e 0%, #0056b3 8%, #00254d 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #00458e 0%, #0056b3 8%, #00254d 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #00458e 0%, #0056b3 8%, #00254d 100%); /* IE10+ */
-    background: linear-gradient(to bottom, #00458e 0%, #0056b3 8%, #00254d 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7d7e7d', endColorstr='#0e0e0e', GradientType=0); /* IE6-9 */
+    background: #00458e;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #00458e 0%, #0056b3 8%, #00254d 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #00458e), color-stop(8%, #0056b3), color-stop(100%, #00254d));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #00458e 0%, #0056b3 8%, #00254d 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #00458e 0%, #0056b3 8%, #00254d 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #00458e 0%, #0056b3 8%, #00254d 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #00458e 0%, #0056b3 8%, #00254d 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7d7e7d', endColorstr='#0e0e0e', GradientType=0);
+    /* IE6-9 */
     border-radius: 0px;
     border: 0px;
     height: 40px;
@@ -404,7 +431,7 @@ input[type=file]:hover {
     height: 40px;
 }
 
-.main-menu > ul {
+.main-menu>ul {
     list-style-type: none;
     display: flex;
     justify-content: start;
@@ -413,15 +440,15 @@ input[type=file]:hover {
     height: 40px !important;
 }
 
-.main-menu > ul > li {
-    border-right:1px solid #bbb;
+.main-menu>ul>li {
+    border-right: 1px solid #bbb;
 }
 
-.main-menu > ul > li:last-child {
+.main-menu>ul>li:last-child {
     border-right: none;
 }
 
-.main-menu > ul > li > a {
+.main-menu>ul>li>a {
     color: white !important;
     text-decoration: none !important;
     padding: 5px 15px;
@@ -429,20 +456,28 @@ input[type=file]:hover {
     height: 40px;
 }
 
-.main-menu > ul > li > a:hover {
+.main-menu>ul>li>a:hover {
     background: #0056b3;
     height: 40px;
 }
 
 .navbarShop {
-    background: #00458e; /* Old browsers */
-    background: -moz-linear-gradient(top, #00458e 0%, #0056b3 8%, #00254d 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #00458e), color-stop(8%, #0056b3), color-stop(100%, #00254d)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #00458e 0%, #0056b3 8%, #00254d 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #00458e 0%, #0056b3 8%, #00254d 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #00458e 0%, #0056b3 8%, #00254d 100%); /* IE10+ */
-    background: linear-gradient(to bottom, #00458e 0%, #0056b3 8%, #00254d 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7d7e7d', endColorstr='#0e0e0e', GradientType=0); /* IE6-9 */
+    background: #00458e;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #00458e 0%, #0056b3 8%, #00254d 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #00458e), color-stop(8%, #0056b3), color-stop(100%, #00254d));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #00458e 0%, #0056b3 8%, #00254d 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #00458e 0%, #0056b3 8%, #00254d 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #00458e 0%, #0056b3 8%, #00254d 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #00458e 0%, #0056b3 8%, #00254d 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7d7e7d', endColorstr='#0e0e0e', GradientType=0);
+    /* IE6-9 */
     border-radius: 0px;
     border: 0px;
     height: 30px;
@@ -456,7 +491,7 @@ div.sticky {
     padding: 5px;
 }
 
-.nav-shop > ul {
+.nav-shop>ul {
     list-style-type: none;
     height: 30px;
     /*list-style-type: none;*/
@@ -465,26 +500,27 @@ div.sticky {
     overflow: hidden;
 }
 
-.nav-shop > ul > li {
+.nav-shop>ul>li {
     float: left;
-    border-right:1px solid #bbb;
+    border-right: 1px solid #bbb;
     height: 30px;
 }
 
-.nav-shop > ul > li:last-child {
+.nav-shop>ul>li:last-child {
     border-right: none;
     float: right;
     text-align: center;
- }
+}
 
-.nav-shop > ul > li > a {
+.nav-shop>ul>li>a {
     color: white !important;
     text-decoration: none !important;
     padding: 5px 15px;
     display: inline-block;
 }
 
-.nav-shop > ul > li > a:hover, .koszyk1:hover {
+.nav-shop>ul>li>a:hover,
+.koszyk1:hover {
     background: #0056b3;
 }
 
@@ -499,12 +535,14 @@ div.sticky {
     color: white;
 }
 
-.koszyk > a, .dodaj > a, .addArticle > a {
+.koszyk>a,
+.dodaj>a,
+.addArticle>a {
     color: white !important;
     text-decoration: none !important;
 }
 
-.dodaj > a:hover {
+.dodaj>a:hover {
     color: silver !important;
 }
 
@@ -537,7 +575,7 @@ div.sticky {
         display: inline-block;
     }
 
-    .nav-shop > ul {
+    .nav-shop>ul {
         position: absolute;
         width: 100%;
         height: 100vh;
@@ -548,14 +586,14 @@ div.sticky {
         transition: all .5s;
     }
 
-    .nav-shop > ul > li {
+    .nav-shop>ul>li {
         float: unset;
         display: block !important;
         /* margin: 50px 0; */
         line-height: 30px;
     }
 
-    .nav-shop > ul > li:last-child {
+    .nav-shop>ul>li:last-child {
         display: none !important;
     }
 
@@ -569,6 +607,7 @@ div.sticky {
         left: 0;
     }
 }
+
 /* ----------- end nawigacja ------------------- */
 .opis {
     text-align: justify;
@@ -584,7 +623,8 @@ div.sticky {
 }
 
 /* ------------- formularz logowania -----------*/
-input, textarea {
+input,
+textarea {
     width: 100%;
     box-sizing: border-box;
     border: 1px solid rgba(20, 0, 153, 0.637);
@@ -596,7 +636,8 @@ input, textarea {
     margin: 1px 0 8px;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     box-shadow: 0 0 3px rgba(20, 0, 153, 0.5);
 }
 
@@ -611,17 +652,26 @@ input:focus, textarea:focus {
 
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0); /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.56); /* Black w/ opacity */
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.56);
+    /* Black w/ opacity */
 }
 
 /* Modal Content */
@@ -646,7 +696,8 @@ input:focus, textarea:focus {
     font-weight: bold;
 }
 
-.close:hover, .close:focus {
+.close:hover,
+.close:focus {
     color: #af0000;
     text-decoration: none;
     cursor: pointer;
@@ -699,7 +750,9 @@ input:focus, textarea:focus {
     }
 }
 
-#imageModal, #myModal, #confirmModal {
+#imageModal,
+#myModal,
+#confirmModal {
     animation: appear 200ms ease-in 1;
 
 }
@@ -771,17 +824,20 @@ input:focus, textarea:focus {
     /*border: 1px solid #ddd;*/
 }
 
-.cartTable > th, td {
+.cartTable>th,
+td {
     text-align: center;
     /*padding: 8px;*/
 
 }
 
-.tableHead, .tableRow {
+.tableHead,
+.tableRow {
     border-bottom: 1px solid #ddd;
 }
 
-.articleQuantity::-webkit-outer-spin-button, .articleQuantity::-webkit-inner-spin-button {
+.articleQuantity::-webkit-outer-spin-button,
+.articleQuantity::-webkit-inner-spin-button {
     opacity: 1;
 }
 
@@ -827,7 +883,8 @@ input:focus, textarea:focus {
     justify-content: center;
 }
 
-.orderTable, .shippingPrice {
+.orderTable,
+.shippingPrice {
     border-collapse: collapse;
     border-spacing: 0;
     width: 500px;
@@ -839,14 +896,19 @@ input:focus, textarea:focus {
     .containerOrder {
         padding: 20px 2% 10px 2%;
     }
-    .orderTable, .shippingPrice {
+
+    .orderTable,
+    .shippingPrice {
         width: 100%;
         margin: unset;
     }
+
     .orderForm {
         display: block !important;
     }
-    .adressForm, .vatForm {
+
+    .adressForm,
+    .vatForm {
         width: 100% !important;
     }
 }
@@ -878,7 +940,8 @@ input[type=radio]:hover {
     margin-top: 25px;
 }
 
-.adressForm, .vatForm {
+.adressForm,
+.vatForm {
     width: 50%;
     padding-right: 20px;
 }
@@ -891,14 +954,16 @@ input[type=radio]:hover {
     align-items: center;
 }
 
-#check, #checkReg {
+#check,
+#checkReg {
     margin: unset;
     width: 20px;
     margin-right: 10px;
     margin-left: 10px;
 }
 
-#check:hover, #checkReg:hover {
+#check:hover,
+#checkReg:hover {
     cursor: pointer;
 }
 
@@ -929,12 +994,12 @@ input[type=radio]:hover {
     width: 100%;
 }
 
-#shippingTable > thead > tr:nth-of-type(1) {
+#shippingTable>thead>tr:nth-of-type(1) {
     border-bottom: 1px solid;
     font-weight: bold;
 }
 
-#shippingTable > tbody > tr {
+#shippingTable>tbody>tr {
     border-bottom: 1px solid #cecece;
 }
 
@@ -988,12 +1053,12 @@ input[type=radio]:hover {
 /*------------------------------------*/
 
 /*------ order list ------------------*/
-#orderList > thead > tr:nth-of-type(1) {
+#orderList>thead>tr:nth-of-type(1) {
     border-bottom: 1px solid;
     font-weight: bold;
 }
 
-#orderList > tbody > tr {
+#orderList>tbody>tr {
     border-bottom: 1px solid #cecece;
 }
 
@@ -1026,7 +1091,7 @@ input[type=radio]:hover {
     text-align: center;
 }
 
-.orderListAction > a {
+.orderListAction>a {
     text-decoration: none;
 }
 
@@ -1045,12 +1110,12 @@ input[type=radio]:hover {
     width: 100%;
 }
 
-#tUser > thead > tr:nth-of-type(1) {
+#tUser>thead>tr:nth-of-type(1) {
     border-bottom: 1px solid;
     font-weight: bold;
 }
 
-#tUser > tbody > tr {
+#tUser>tbody>tr {
     border-bottom: 1px solid #cecece;
 }
 
@@ -1103,8 +1168,10 @@ input[type=radio]:hover {
 }
 
 @media only screen and (max-width: 768px) {
+
     /* For mobile phones: */
-    .container, .containerW {
+    .container,
+    .containerW {
         width: 95%;
     }
 
@@ -1112,15 +1179,35 @@ input[type=radio]:hover {
         display: block;
     }
 
-    .modalContent, .modalContent2 {
-        width: 80%;
+    .modalContent,
+    .modalContent2 {
+        width: 90%;
+        padding: 10px;
     }
 
     .containerWrap {
         padding: 20px 1% 10px 1%;
     }
 
-    .cartTable, .orderTable, .shippingPrice {
+    .cartTable,
+    .orderTable,
+    .shippingPrice {
         font-size: 0.8em;
+    }
+
+    .modalBody {
+        padding: 0% 5% 0% 5%;
+    }
+
+    #articleDescription {
+        max-height: 250px;
+        overflow: scroll;
+        padding-right: 15px;
+    }
+
+    #articleName {
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
     }
 }
