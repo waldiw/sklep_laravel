@@ -1,0 +1,5 @@
+instalujemy paczkę:
+composer require devpark/laravel-przelewy24
+
+uruchomiamy:
+php artisan vendor:publish --provider="Devpark\Transfers24\Providers\Transfers24ServiceProvider"
