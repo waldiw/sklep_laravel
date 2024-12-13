@@ -14,6 +14,9 @@ use Illuminate\Foundation\Application;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Auth;
+
 
 class OperatorController extends Controller
 {
@@ -96,6 +99,10 @@ class OperatorController extends Controller
         ]);
 
         $order->update($validated);
+        
+        // Log::warning('zmieniono status na ');
+        Log::channel('app')->info('zamówienie ' . $order->id . ',' . $order->status . ',' . 
+        Auth::user()->email);
 
         return back()->with('message', 'Status zamówienia został zmieniony!');
     }
