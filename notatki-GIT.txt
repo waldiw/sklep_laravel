@@ -27,3 +27,15 @@ git reset --hard
 git branch -M main
 
 git push -f origin master
+
+zmiana banch
+git checkout master
+
+lista branch
+git branch
+
+kasowanie branch
+na serwerze
+git push origin --delete
+lokalnie
+git branch -d
