@@ -99,9 +99,8 @@ class OperatorController extends Controller
         ]);
 
         $order->update($validated);
-        
-        // Log::warning('zmieniono status na ');
-        Log::channel('app')->info('zamówienie ' . $order->id . ',' . $order->status . ',' . 
+
+        Log::channel('app')->info('status,zamówienie ' . $order->id . ',' . $order->status . ',' .
         Auth::user()->email);
 
         return back()->with('message', 'Status zamówienia został zmieniony!');
