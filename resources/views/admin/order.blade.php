@@ -3,7 +3,8 @@
 @section('title', 'E-sklep Administracja')
 
 @section('content')
-    <h2>Szczegóły zamówienia numer {{ $order->id }}:</h2>
+    <a href="{{ route('generatePdf', $order->id ) }}" class="btn btn-success">Pobierz pdf</a>
+    <h2>Szczegóły zamówienia numer {{ $order->id}}:</h2>
     <p>Zamówienie z dnia: {{ $order->created_at }}</p>
     <p>Zamawiajacy: {{ $order->name }}</p>
     <p>Adres: {{ $order->adress }}</p>
@@ -41,7 +42,7 @@
             <td></td>
             <td></td>
             <td class="alignRight">Razem:</td>
-            <td class="basketTotal alignRight">{{ numberFormat($totlOrder) }} zł</td>
+            <td class="basketTotal alignRight">{{ numberFormat($totalOrder) }} zł</td>
         </tr>
         <tr>
             <td></td>
@@ -53,7 +54,7 @@
             <td></td>
             <td></td>
             <td class="alignRight">Do zapłaty:</td>
-            <td class="toPay alignRight">{{ numberFormat($order->shipping->shipping + $totlOrder) }} zł</td>
+            <td class="toPay alignRight">{{ numberFormat($order->shipping->shipping + $totalOrder) }} zł</td>
         </tr>
         </tfoot>
     </table>

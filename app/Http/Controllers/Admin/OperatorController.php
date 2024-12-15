@@ -81,9 +81,9 @@ class OperatorController extends Controller
     public function editOrder(string $id): View|Application|Factory|\Illuminate\Contracts\Foundation\Application
     {
         $order = Orders::findOrFail($id);
-        $totlOrder = totalOrder($order->carts);
+        $totalOrder = totalOrder($order->carts);
 
-        return view('admin.order', compact('order', 'totlOrder'));
+        return view('admin.order', compact('order', 'totalOrder'));
     }
 
     /**

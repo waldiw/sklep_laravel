@@ -28,6 +28,11 @@ git branch -M main
 
 git push -f origin master
 
+tworzenie branch
+git branch nazwa_gałęzi
+lub tworzenie i przełączenia na nowy branch
+git checkout -b nazwa_gałęzi
+
 zmiana banch
 git checkout master
 

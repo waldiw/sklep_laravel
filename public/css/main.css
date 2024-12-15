@@ -882,6 +882,9 @@ td {
     padding: 20px 20% 10px 20%;
     justify-content: center;
 }
+#orderTable thead {
+    text-align: center;
+}
 
 .orderTable,
 .shippingPrice {

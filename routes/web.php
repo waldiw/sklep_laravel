@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\ArticleController;
 use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\OperatorController;
+use App\Http\Controllers\Admin\PdfController;
 use App\Http\Controllers\Admin\ShippingController;
 use App\Http\Controllers\Admin\StatuteController;
 use App\Http\Controllers\CartController;
@@ -75,6 +76,8 @@ Route::middleware(['auth'])->group(function() {
     Route::get('/zmień-płatność/{id}', [ShippingController::class, 'edit'])->name('editShipping');
     Route::put('/zmień-płatność/{id}', [ShippingController::class, 'update']);
     Route::delete('/usuń-płatność/{id}', [ShippingController::class, 'destroy'])->name('deleteShipping');
+
+    Route::get('generate-pdf/{id}', [PdfController::class, 'generatePdf'])->name('generatePdf');
 
     Route::middleware(['can:isAdministrator'])->group(function () {
         Route::get('/sadmin', [AdminController::class, 'index'])->name('sadmin');
