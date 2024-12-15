@@ -3,7 +3,7 @@
 @section('title', 'E-sklep Administracja')
 
 @section('content')
-{{--    <a href="{{ route('generatePdf', $order->id ) }}" class="btn btn-success">Pobierz pdf</a>--}}
+    <a href="{{ route('generatePdf', $order->id ) }}" class="btn btn-success">Pobierz pdf</a>
     <h2>Szczegóły zamówienia numer {{ $order->id}}:</h2>
     <p>Zamówienie z dnia: {{ $order->created_at }}</p>
     <p>Zamawiajacy: {{ $order->name }}</p>
