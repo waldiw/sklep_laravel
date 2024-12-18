@@ -36,7 +36,7 @@ class CsfController extends Controller
             ], ';');
             //iconv( "UTF-8", "Windows-1250", $order->adress )
             // Fetch and process data in chunks
-            Orders::chunk(25, function ($orders) use ($handle) {
+            Orders::where('delete', 0)->chunk(25, function ($orders) use ($handle) {
                 foreach ($orders as $order) {
                     //$totalOrder = numberFormat(totalOrder($order->carts));
                     // Extract data from each employee.
@@ -91,7 +91,7 @@ class CsfController extends Controller
             ], ';');
             //iconv( "UTF-8", "Windows-1250", $order->adress )
             // Fetch and process data in chunks
-            Orders::chunk(25, function ($orders) use ($handle) {
+            Orders::where('delete', 0)->chunk(25, function ($orders) use ($handle) {
                 foreach ($orders as $order) {
                     // Extract data from each employee.
                     foreach ($order->carts as $item) {
