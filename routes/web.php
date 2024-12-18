@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\ArticleController;
 use App\Http\Controllers\Admin\ContactController;
+use App\Http\Controllers\Admin\CsfController;
 use App\Http\Controllers\Admin\OperatorController;
 use App\Http\Controllers\Admin\PdfController;
 use App\Http\Controllers\Admin\ShippingController;
@@ -53,6 +54,8 @@ Route::get('/showArticle/{id}', [ShopController::class, 'show'])->name('showArti
 
 Route::middleware(['auth'])->group(function() {
     Route::get('/home', [OperatorController::class, 'index'])->name('home');
+    Route::get('/home-limit', [OperatorController::class, 'limit'])->name('limit');
+
     Route::get('/zamówienie-szczegóły/{id}', [OperatorController::class, 'editOrder'])->name('editOrder');
     Route::put('/zamówienie-szczegóły/{id}', [OperatorController::class, 'updateOrder']);
     Route::delete('/zamówienie-szczegóły/{id}', [OperatorController::class, 'deleteOrder'])->name('deleteOrder');
@@ -78,6 +81,8 @@ Route::middleware(['auth'])->group(function() {
     Route::delete('/usuń-płatność/{id}', [ShippingController::class, 'destroy'])->name('deleteShipping');
 
     Route::get('generate-pdf/{id}', [PdfController::class, 'generatePdf'])->name('generatePdf');
+    Route::get('generate-csv', [CsfController::class, 'exportCSV'])->name('exportCSV');
+    Route::get('generateAll-csv', [CsfController::class, 'exportAllCSV'])->name('exportAllCSV');
 
     Route::middleware(['can:isAdministrator'])->group(function () {
         Route::get('/sadmin', [AdminController::class, 'index'])->name('sadmin');

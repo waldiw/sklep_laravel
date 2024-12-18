@@ -399,7 +399,7 @@ input[type=file]:hover {
 /* --------------------- nawigacja ------------------------------- */
 
 
-.navbarW {
+.navbarW, ul.dropdown-menu li {
     background: #00458e;
     /* Old browsers */
     background: -moz-linear-gradient(top, #00458e 0%, #0056b3 8%, #00254d 100%);
@@ -431,7 +431,7 @@ input[type=file]:hover {
     height: 40px;
 }
 
-.main-menu>ul {
+.main-menu ul {
     list-style-type: none;
     display: flex;
     justify-content: start;
@@ -440,15 +440,15 @@ input[type=file]:hover {
     height: 40px !important;
 }
 
-.main-menu>ul>li {
+.main-menu ul li {
     border-right: 1px solid #bbb;
 }
 
-.main-menu>ul>li:last-child {
+.main-menu ul li:last-child {
     border-right: none;
 }
 
-.main-menu>ul>li>a {
+.main-menu ul li a {
     color: white !important;
     text-decoration: none !important;
     padding: 5px 15px;
@@ -456,10 +456,58 @@ input[type=file]:hover {
     height: 40px;
 }
 
-.main-menu>ul>li>a:hover {
+.main-menu ul li a:hover {
     background: #0056b3;
     height: 40px;
 }
+
+/* Ukrywanie rozwijanego menu na początku */
+ul.dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    /*display: none;*/
+    position: absolute;
+    /*left: 0;*/
+    /*top: 100%;*/
+    background-color: #333;
+    list-style-type: none;
+    /*margin: 0;*/
+    /*padding: 0;*/
+    margin-top: 5px;
+    min-width: 230px;
+    z-index: 1;
+}
+ul.dropdown-menu li {
+    justify-content: flex-start;
+}
+
+ul.dropdown-menu li a {
+    padding: 5px 20px;
+    display: block;
+    width: 100%;
+}
+/* Wyświetlanie rozwijanego menu przy najechaniu na element */
+li.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+ul.dropdown-menu li a:hover {
+    background-color: #0056b3;
+}
+
+/*ul.dropdown-menu {*/
+/*    display: block;*/
+/*    opacity: 0;*/
+/*    visibility: hidden;*/
+/*    transition: opacity 0.3s ease, visibility 0.3s ease;*/
+/*}*/
+/*li.dropdown:hover .dropdown-menu {*/
+/*    opacity: 1;*/
+/*    visibility: visible;*/
+/*}*/
 
 .navbarShop {
     background: #00458e;

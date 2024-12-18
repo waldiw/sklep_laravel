@@ -48,7 +48,7 @@ class Orders extends Model
         //return Storage::url($this->image);
     }
 
-    // w widoku dzięki getAdressVatAttribute pobieramy cały adres $order->adressVat
+    // w widoku dzięki getvatAdressAttribute pobieramy cały adres $order->vatAdress
     public function getvatAdressAttribute(): string
     {
         $string = ':street, :city, :post';

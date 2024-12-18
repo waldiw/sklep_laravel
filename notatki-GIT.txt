@@ -41,6 +41,6 @@ git branch
 
 kasowanie branch
 na serwerze
-git push origin --delete
+git push origin --delete nazwa_gałęzi
 lokalnie
-git branch -d
+git branch -d nazwa_gałęzi

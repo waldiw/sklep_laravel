@@ -4,6 +4,7 @@
 
 @section('content')
     <h2>Zamówienia:</h2>
+{{--    <a href="{{ route('limit') }}" class="btn btn-success">Ostatnie 10</a>--}}
 
     <table id="orderList">
         <thead id="orderListHead">

@@ -50,6 +50,19 @@ class OperatorController extends Controller
     public function index(): Renderable
     {
         $orders = Orders::where('delete', 0)->get();
+//        $orders = Orders::where('delete', 0)->latest()->take( 10 )->get ()->reverse();
+        return view('admin.home', compact('orders'));
+    }
+
+    /**
+     * Show the application dashboard.
+     *
+     * @return Renderable
+     */
+    public function limit(): Renderable
+    {
+//        $orders = Orders::where('delete', 0)->get();
+        $orders = Orders::where('delete', 0)->latest()->take( 10 )->get ()->reverse();
         return view('admin.home', compact('orders'));
     }
 
