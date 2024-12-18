@@ -36,6 +36,9 @@ git checkout -b nazwa_gałęzi
 zmiana banch
 git checkout master
 
+scalanie gałęzi
+git merge nazwa_gałęzi
+
 lista branch
 git branch
 
