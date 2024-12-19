@@ -8,6 +8,11 @@ use Illuminate\Http\Request;
 
 class CsfController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+//        $this->middleware('can:isAdministrator');
+    }
     public function exportCSV()
     {
         $filename = 'zamówienia.csv';

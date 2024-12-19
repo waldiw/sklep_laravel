@@ -7,7 +7,7 @@
                 <li><a href="{{ route('limit') }}">Ostatnie 10</a></li>
                 <li><a href="{{ route('exportCSV') }}">Export Csv</a></li>
                 <li><a href="{{ route('exportAllCSV') }}">Export Csv rozszerzony</a></li>
-{{--                <li><a href="#">Filtrowanie</a></li>--}}
+                <li><a href="{{ route('filter') }}">Filtrowanie</a></li>
             </ul>
         </li>
 {{--        <li>--}}

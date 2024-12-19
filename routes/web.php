@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\ArticleController;
 use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\CsfController;
+use App\Http\Controllers\Admin\FilterController;
 use App\Http\Controllers\Admin\OperatorController;
 use App\Http\Controllers\Admin\PdfController;
 use App\Http\Controllers\Admin\ShippingController;
@@ -83,6 +84,7 @@ Route::middleware(['auth'])->group(function() {
     Route::get('generate-pdf/{id}', [PdfController::class, 'generatePdf'])->name('generatePdf');
     Route::get('generate-csv', [CsfController::class, 'exportCSV'])->name('exportCSV');
     Route::get('generateAll-csv', [CsfController::class, 'exportAllCSV'])->name('exportAllCSV');
+    Route::get('filter', [FilterController::class, 'filter'])->name('filter');
 
     Route::middleware(['can:isAdministrator'])->group(function () {
         Route::get('/sadmin', [AdminController::class, 'index'])->name('sadmin');
