@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 
@@ -91,5 +92,16 @@ class Orders extends Model
     public function email()
     {
         return $this->email;
+    }
+
+    public function scopeCreatedBetweenDates($query, array $dates)
+    {
+        $start = ($dates[0] instanceof Carbon) ? $dates[0] : Carbon::parse($dates[0]);
+        $end   = ($dates[1] instanceof Carbon) ? $dates[1] : Carbon::parse($dates[1]);
+
+        return $query->whereBetween('created_at', [
+            $start->startOfDay(),
+            $end->endOfDay()
+        ]);
     }
 }

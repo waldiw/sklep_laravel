@@ -114,4 +114,7 @@ public function handle($request, Closure $next)
     }
 
     return $next($request);
-}-
+}
+
+
+Reformat Code or press Ctrl Alt L

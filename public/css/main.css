@@ -397,7 +397,9 @@ input[type=file]:hover {
 /*}*/
 
 /* --------------------- nawigacja ------------------------------- */
-
+.navbarW {
+    z-index: 1;
+}
 
 .navbarW, ul.dropdown-menu li {
     background: #00458e;
@@ -662,7 +664,11 @@ div.sticky {
     padding: 20px 10% 10px 10%;
 }
 
-
+.opisFiltr {
+    text-align: justify;
+    margin-left: -10%;
+    margin-right: -10%;
+}
 
 /*------------ regulamin ----------------------- */
 #showStatute {
@@ -1216,6 +1222,15 @@ input[type=radio]:hover {
     max-width: 100%;
     height: auto;
     /*height: 100%;*/
+}
+
+/********* filter ****************/
+#status, #date, #filter, #filterOff {
+    width: unset;
+}
+
+.status {
+    width: unset;
 }
 
 @media only screen and (max-width: 768px) {

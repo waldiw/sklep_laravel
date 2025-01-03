@@ -1,13 +1,13 @@
 <nav class="main-menu">
     <ul>
         <li class="dropdown">
-            <a href="#" class="dropdown-toggle">Zamówienia</a>
+            <a href="{{ route('filter') }}" class="dropdown-toggle">Zamówienia</a>
             <ul class="dropdown-menu">
-                <li><a href="{{ route('home') }}">Wszystkie</a></li>
-                <li><a href="{{ route('limit') }}">Ostatnie 10</a></li>
-                <li><a href="{{ route('exportCSV') }}">Export Csv</a></li>
+{{--                <li><a href="{{ route('home') }}">Wszystkie</a></li>--}}
+                <li><a href="{{ route('filter') }}">Zamówienia</a></li>
+{{--                <li><a href="{{ route('limit') }}">Ostatnie 10</a></li>--}}
+{{--                <li><a href="{{ route('exportCSV') }}">Export Csv</a></li>--}}
                 <li><a href="{{ route('exportAllCSV') }}">Export Csv rozszerzony</a></li>
-                <li><a href="{{ route('filter') }}">Filtrowanie</a></li>
             </ul>
         </li>
 {{--        <li>--}}
